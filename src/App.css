@@ -1,9 +1,10 @@
-.App {
+.Main {
   text-align: center;
+  --font: "Lato Semibold"
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 8vmin;
   pointer-events: none;
 }
 
@@ -13,26 +14,26 @@
   }
 }
 
-.App-header {
+.Main-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar{
+  color: black;
+  background-color: darkgrey;
+  font-size: 24px;
+  font-family: var(--font);
+  align-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn{
+  width: 12vmin;
+  font-size: 19px;
+  font-family: var(--font);
 }
