@@ -14,18 +14,32 @@ function App() {
                             <span className="navbar-brand-font-size">Booking Management</span>
                         </div>
                     </div>
-                    <button type="button" className="btn btn-outline-light">Login</button>
+                    <button id="login" type="button" className="btn btn-outline-light">Login</button>
                 </div>
             </nav>
             <header className="Main-header">
+                <form className="appointment-form">
+                    <label>Name:</label>
+                    <input type="text"/><br/>
+                    <label>Date of Appointment:</label>
+                    <input type="date"/><br/>
+                    <label>Contact Information:</label>
+                    <input type="text" placeholder="email/phone"/><br/>
+                    <label>Appointment Options:</label>
+                    <select>
+                        <option disabled selected>Select your option</option>
+                        <option>Hair</option>
+                        <option>Eyebrows</option>
+                        <option>Nails</option>
+                        <option>Eyelashes</option>
+                    </select><br/>
+                </form>
+                <button id="submit" type="button" className="btn btn-outline-light m-2">Submit</button>
             </header>
-
-            <input type="text"/>
-            <input type=""/>
-            <input type="text"/>
-            <input type="text"/>
         </div>
-    );
+    )
+        ;
 }
+
 
 export default App;
